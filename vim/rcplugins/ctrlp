@@ -28,6 +28,7 @@ endfunction
 
 command! -nargs=* MapTargetedCtrlp call <sid>CtrlpTargetedMapping(<f-args>)
 
+" TODO : modify the settings here
 let rails_ctrlp_mappings = {
       \   'gc': 'app/controllers',
       \   'gj': 'app/assets/javascripts',
@@ -43,7 +44,7 @@ for [mapping, directory] in items(rails_ctrlp_mappings)
   execute 'MapTargetedCtrlp '.mapping.' '.directory
 endfor
 
-nmap <LEADER>rf :CtrlP ~/.vim/plugin/settings<cr>
+nmap <LEADER>rf :CtrlP ~/.vim/settings<cr>
 nmap <LEADER>rp :CtrlP ~/.vim/rcplugins<cr>
 nmap <LEADER>ed :CtrlP ~/Work/projects/dotfiles<cr>
 

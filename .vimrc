@@ -25,6 +25,10 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 syntax on
 
+" Vimrc is split accross multiple files, so loop over and source each
+"---------------------------------------------------------------------
+call s:SourceConfigFilesIn('settings')
+
 " Elixir syntax
 " Plugin 'elixir-lang/vim-elixir'
 
