@@ -3,12 +3,22 @@ filetype off                  " required
 " Change mapleader
 let mapleader=","
 
+function! s:SourceConfigFilesIn(directory)
+    let directory_splat = '~/.vim/' . a:directory . '/*'
+    for config_file in split(glob(directory_splat), '\n')
+        if filereadable(config_file)
+            execute 'source' config_file
+        endif
+    endfor
+endfunction
+
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+" Plugins are each listed in their own file. Loop and source ftw
+"----------------------------------------------------------------
+call s:SourceConfigFilesIn('rcplugins')
 
 " Elixir syntax
 " Plugin 'elixir-lang/vim-elixir'
@@ -113,6 +123,7 @@ Plugin 'gmarik/Vundle.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+syntax on
 
 " Use the Solarized Dark theme
 "set background=light
