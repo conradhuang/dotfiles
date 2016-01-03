@@ -20,6 +20,11 @@ call vundle#begin()
 "----------------------------------------------------------------
 call s:SourceConfigFilesIn('rcplugins')
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+syntax on
+
 " Elixir syntax
 " Plugin 'elixir-lang/vim-elixir'
 
@@ -120,10 +125,6 @@ call s:SourceConfigFilesIn('rcplugins')
 "Plugin 'guns/vim-clojure-highlight'
 "Plugin 'kien/rainbow_parentheses.vim'
 "
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-syntax on
 
 " Use the Solarized Dark theme
 "set background=light
