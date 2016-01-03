@@ -12,3 +12,9 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Bundles should not be pushed to Github
+vim/bundle
+
+# Swap files should be ignored
+*.swp
