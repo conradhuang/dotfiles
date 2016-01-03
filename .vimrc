@@ -104,9 +104,6 @@ call s:SourceConfigFilesIn('settings')
 "" do syntax check
 "Plugin 'scrooloose/syntastic'
 "
-"" fuzzy file find
-"Plugin 'kien/ctrlp.vim'
-"
 "" vim cscope
 "" Plugin 'vim-scripts/cscope.vim'
 "
