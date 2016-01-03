@@ -1,0 +1,6 @@
+Plugin 'conradhuang/ag.vim'
+
+let g:ag_prg="ag --column"
+let g:ag_working_path_mode="r"
+
+" vim:ft=vim
