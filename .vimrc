@@ -13,7 +13,7 @@ function! s:SourceConfigFilesIn(directory)
 endfunction
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " Plugins are each listed in their own file. Loop and source ftw
