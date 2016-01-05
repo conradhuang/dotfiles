@@ -15,4 +15,12 @@ nnoremap \ :Ag<SPACE>
 " bind <F2> as the key to toggle paste mode
 set pastetoggle=<F2>
 
+" move lines quickly
+noremap ∆ :m .+1<CR>==
+noremap ˚ :m .-2<CR>==
+inoremap ∆ <Esc>:m .+1<CR>==gi
+inoremap ˚ <Esc>:m .-2<CR>==gi
+vnoremap ∆ <Esc>:m '>+1<CR>gv=gv
+vnoremap ˚ <Esc>:m '<-2<CR>gv=gv
+
 " vim:ft=vim
