@@ -29,24 +29,6 @@ syntax on
 "---------------------------------------------------------------------
 call s:SourceConfigFilesIn('settings')
 
-" Elixir syntax
-" Plugin 'elixir-lang/vim-elixir'
-
-" Track the engine.
-"Plugin 'SirVer/ultisnips'
-"
-"" " Snippets are separated from the engine. Add this if you want them:
-"Plugin 'honza/vim-snippets'
-"
-"" " Trigger configuration. Do not use <tab> if you use
-"" https://github.com/Valloric/YouCompleteMe.
-"let g:UltiSnipsExpandTrigger="<c-x>"
-"let g:UltiSnipsJumpForwardTrigger="<c-b>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-"
-"" If you want :UltiSnipsEdit to split your window.
-"let g:UltiSnipsEditSplit="vertical"
-"
 "" filesystem tree
 "Plugin 'scrooloose/nerdtree'
 "autocmd StdinReadPre * let s:std_in=1
@@ -58,8 +40,6 @@ call s:SourceConfigFilesIn('settings')
 "Plugin 'godlygeek/tabular'
 "" Plugin 'plasticboy/vim-markdown'
 "" let g:vim_markdown_folding_disabled=1
-"
-"Plugin 'Valloric/YouCompleteMe'
 "
 "Plugin 'jiangmiao/auto-pairs'
 "
