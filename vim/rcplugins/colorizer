@@ -1,0 +1,7 @@
+Plugin 'chrisbra/Colorizer'
+
+let g:colorizer_auto_color = 1
+let g:colorizer_auto_filetype='less,sass,scss,js,jsx,css,html'
+let g:colorizer_syntax = 1
+
+" vim:ft=vim
